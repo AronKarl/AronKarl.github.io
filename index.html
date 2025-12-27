@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aron Karl T. Loza | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Aron</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-robot theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heavy Rain Effect Container (Light Mode) -->
+    <div id="rain-container" class="rain-container">
+        <div id="clouds-container" class="clouds-container"></div>
+    </div>
+
+    <!-- Thunderstorm Effect Container (Dark Mode) -->
+    <div id="thunderstorm-container" class="thunderstorm-container">
+        <div id="dark-clouds-container" class="dark-clouds-container"></div>
+        <div class="lightning"></div>
+    </div>
+
+    <section id="home" class="section home-section">
+        <div class="home-content">
+            <div class="profile-image-container">
+                <div class="profile-image-wrapper">
+                    <img src="profile.png" alt="Aron Karl T. Loza" class="profile-image">
+                    <div class="profile-glow"></div>
+                    <div class="profile-rays profile-rays-rain"></div>
+                    <div class="profile-rays profile-rays-thunder"></div>
+                </div>
+            </div>
+            <div class="home-text">
+                <h1 class="home-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Aron Karl T. Loza</span>
+                </h1>
+                <p class="tagline">Second Year IT Student</p>
+                <p class="quote">"Coding is a journey where patience and persistence turn ideas into solutions, and every mistake becomes a step toward improvement."</p>
+                <div class="scroll-indicator">
+                    <span>Know more about me</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-description">
+                <p>I'm Aron Karl T. Loza, a second-year BSIT student at Eastern Visayas State University (EVSU). I am passionate about Web Development and Networking, and I enjoy exploring new technologies, building projects, and continuously improving my skills. Outside of technology, I love biking, hiking, watching sunsets, and spending time with my dogs.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Education</h3>
+                    <p>Bachelor of Science in Information Technology (BSIT)</p>
+                    <p class="sub-text">Second-year student at Eastern Visayas State University (EVSU)</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Technical Interests</h3>
+                    <p>Web Development and Networking</p>
+                    <p class="sub-text">Passionate about building web applications and network systems</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Hobbies</h3>
+                    <p>Biking, Hiking, Watching Sunsets, and Spending Time with Dogs</p>
+                    <p class="sub-text">Enjoying nature and the simple pleasures of life</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="section-header">
+            <h2 class="section-title">My Skills</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 class="category-title">Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <span>HTML</span>
+                        <p class="skill-desc">Structure and content markup</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <span>CSS</span>
+                        <p class="skill-desc">Styling and layout design</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <span>JavaScript</span>
+                        <p class="skill-desc">Interactive web functionality</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <span>C</span>
+                        <p class="skill-desc">System programming and algorithms</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <span>VS Code</span>
+                        <p class="skill-desc">Code editor and IDE</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <span>GitHub</span>
+                        <p class="skill-desc">Version control and collaboration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Areas of Interest</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                        <span>Web Development</span>
+                        <p class="skill-desc">Building web applications</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                        <span>Networking</span>
+                        <p class="skill-desc">Network configuration & protocols</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <span>Databases</span>
+                        <p class="skill-desc">Data management systems</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-users"></i></div>
+                        <span>Teamwork</span>
+                        <p class="skill-desc">Working effectively in groups</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                        <span>Communication</span>
+                        <p class="skill-desc">Clear and effective communication</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <span>Problem-Solving</span>
+                        <p class="skill-desc">Analyzing and resolving issues</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-thumbnail">
+                    <div class="project-placeholder"><i class="fas fa-clipboard-check"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3>Room Attendance System</h3>
+                    <p class="project-description">A web-based system designed to efficiently track and manage room attendance, including check-in/check-out records and attendance reports.</p>
+                    <div class="project-details">
+                        <div class="project-role">
+                            <strong>My Role:</strong> Front-end Developer
+                        </div>
+                        <div class="project-contributions">
+                            <strong>Contributions:</strong> Designed database schema, implemented attendance tracking features, created user interface
+                        </div>
+                    </div>
+                    <div class="project-tools">
+                        <span class="tool-tag">HTML</span>
+                        <span class="tool-tag">CSS</span>
+                        <span class="tool-tag">JavaScript</span>
+                        <span class="tool-tag">PHP</span>
+                        <span class="tool-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-thumbnail">
+                    <div class="project-placeholder"><i class="fas fa-tasks"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3>Task Tracker</h3>
+                    <p class="project-description">A simple and intuitive task management application that helps users organize and track their daily tasks and projects efficiently.</p>
+                    <div class="project-details">
+                        <div class="project-role">
+                            <strong>My Role:</strong> Full-stack Developer
+                        </div>
+                        <div class="project-contributions">
+                            <strong>Contributions:</strong> Designed user interface, implemented task CRUD operations, added local storage functionality
+                        </div>
+                    </div>
+                    <div class="project-tools">
+                        <span class="tool-tag">HTML</span>
+                        <span class="tool-tag">CSS</span>
+                        <span class="tool-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>aronkarlloza27@gmail.com</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/AronKarl" class="social-link" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/share/1D5rf73JGx/" class="social-link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/aronkaarl?igsh=MXhhbm9qZmJueXVraw==" class="social-link" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <div id="success-message" class="success-message" style="display: none;"></div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Aron Karl T. Loza | All rights reserved</p>
+            <div class="footer-social">
+                <a href="https://github.com/AronKarl" class="footer-social-link" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1D5rf73JGx/" class="footer-social-link" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/aronkaarl?igsh=MXhhbm9qZmJueXVraw==" class="footer-social-link" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
